@@ -3,10 +3,6 @@ body { background: ff91ea;
   color: #2d1b4e; font-family: Arial, sans-serif;
 }
 
-.container{
-  background: ff91ea;
-}
-
 .navbar-purple { background-color: #e6ccff; }
 .navbar-purple-drop { background-color: #b093cc; }
 .search-purple { color: #8a2be2; border-color: #8a2be2; }
@@ -134,6 +130,13 @@ body {
 
 
 /*home page*/
+body { 
+    background: #0f0a1d;
+    color: #ffffff; 
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    min-height: 100vh;
+}
+
 .glow-title {
   margin-top: 50px;
   font-size: 50px;
@@ -249,6 +252,13 @@ header p {
 
 
 /*heroes page*/
+body { 
+    background: #0f0a1d;
+    color: #ffffff; 
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    min-height: 100vh;
+}
+
 .section-title {
   color: #8a2be2;
   font-size: 36px;
@@ -284,6 +294,13 @@ header p {
 
 
 /*heroes-pages*/
+body { 
+    background: #0f0a1d;
+    color: #ffffff; 
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    min-height: 100vh;
+}
+
 .champion-container { margin-top: 50px; }
 
 .champion-left img {
