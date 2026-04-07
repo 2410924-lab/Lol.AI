@@ -3,6 +3,10 @@ body { background: ff91ea;
   color: #2d1b4e; font-family: Arial, sans-serif;
 }
 
+.container{
+  background: ff91ea;
+}
+
 .navbar-purple { background-color: #e6ccff; }
 .navbar-purple-drop { background-color: #b093cc; }
 .search-purple { color: #8a2be2; border-color: #8a2be2; }
