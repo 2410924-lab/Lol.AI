@@ -11,8 +11,7 @@ body { background: ff91ea;
 .container { margin-top: 50px; }
 
 .player-card,
-.ai-box,
-.login-form {
+.ai-box {
   background-color: #ffffff;
   color: #2d1b4e;
   box-shadow: 0 0 15px rgba(138, 43, 226, 0.2);
@@ -140,36 +139,6 @@ body {
   text-shadow:
      0 0 2px #8a2be2,
      0 0 5px #9b4eff;
-}
-
-.login-container {
-  margin-top: 80px;
-  min-height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-.login-form {
-  background-color: rgb(211, 211, 211);
-  padding: 40px;
-  border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-  width: 100%;
-  max-width: 600px;
-}
-
-.login-button{
-    color: #000000;
-    border-color: #8a2be2;
-    background-color: #be83f5;
-}
-.login-button:hover{
-    color: #000000;
-    border-color: #000000;
-    background-color: #571b8f;
-    border: 1px solid black;
 }
 
 header {
