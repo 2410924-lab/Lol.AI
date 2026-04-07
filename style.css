@@ -1,6 +1,7 @@
 /*body - navbar - mic*/
-body { background: linear-gradient(to bottom, #f3e8ff, #e6ccff);
-  color: #2d1b4e; font-family: Arial, sans-serif; }
+body { background: #e6ccff;
+  color: #2d1b4e; font-family: Arial, sans-serif;
+}
 
 .navbar-purple { background-color: #e6ccff; }
 .navbar-purple-drop { background-color: #b093cc; }
