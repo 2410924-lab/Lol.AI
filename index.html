@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LOL.Ai Home</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-purple">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">LOL.Ai</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="stats.html">Stats</a></li>
+        <li class="nav-item"><a class="nav-link" href="heroes.html">Heroes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Premium</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">More options</a>
+          <ul class="dropdown-menu navbar-purple-drop">
+            <li><a class="dropdown-item" href="#">Guide</a></li>
+            <li><a class="dropdown-item" href="login.html">Login</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <form class="d-flex" onsubmit="searchChampionNavbar(event)">
+        <input id="navbarSearch" class="form-control me-2" type="search" placeholder="Search for a champion!">
+        <button class="btn search-purple" type="submit">Search</button>
+      </form>
+
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+
+  <!-- Header / Title -->
+  <header>
+    <h1>LOL.Ai</h1>
+    <p>Your League of Legends Companion</p>
+  </header>
+
+  <!-- Quick Navigation Cards -->
+  <div class="row cards-row g-4">
+    <div class="col-md-3">
+      <div class="card-custom" onclick="location.href='heroes.html'">
+        <h3>Champions</h3>
+        <p>Explore all champions by lane                                    😊</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card-custom" onclick="location.href='tierlist.html'">
+        <h3>Tier List</h3>
+        <p>Check top champions for this patch</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card-custom" onclick="location.href='stats.html'">
+        <h3>Stats</h3>
+        <p>Track your games and rank progress</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card-custom" onclick="location.href='guides.html'">
+        <h3>Guides</h3>
+        <p>Learn tips & tricks for every champion</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="ai-container">
+  <div class="ai-box">
+    
+    <h2 class="ai-title">LOL.AI Assistant</h2>
+
+    <!-- Chat messages -->
+    <div class="chat-box">
+      <div class="message ai">
+        Hi! I'm your assistant. Ask me anything about champions, builds, or matchups.
+      </div>
+
+      <div class="message user">
+        What should I build on Ahri?
+      </div>
+
+      <div class="message ai">
+        You can go Luden's Companion, Sorcerer's Shoes, and Shadowflame for burst damage.
+      </div>
+
+      <div class="message user">
+        Best jungler right now?
+      </div>
+
+      <div class="message ai">
+        Lee Sin and Evelynn are strong picks right now.
+      </div>
+    </div>
+
+    <!-- Fake input -->
+    <div class="chat-input">
+      <input type="text" placeholder="Ask something..." class="form-control">
+      <button class="btn send">Send</button>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js" defer></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
