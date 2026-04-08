@@ -1,5 +1,7 @@
 /body-navbar - mic*/
 body { 
+    margin: 0;
+    padding: 0;
     background: #0f0a1d;
     color: #ffffff; 
     font-family: 'Segoe UI', Roboto, sans-serif;
