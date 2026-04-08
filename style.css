@@ -1,11 +1,10 @@
-/body-navbar - mic*/
+/body-navbar - mic*
 body { 
     background: #0f0a1d;
     color: #ffffff; 
     font-family: 'Segoe UI', Roboto, sans-serif;
     min-height: 100vh;
 }
-
 
 .navbar-purple { background-color: #e6ccff; }
 .navbar-purple-drop { background-color: #b093cc; }
