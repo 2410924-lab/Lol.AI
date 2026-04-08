@@ -1,4 +1,12 @@
-/navbar - mic*/
+/body-navbar - mic*/
+body { 
+    background: #0f0a1d;
+    color: #ffffff; 
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    min-height: 100vh;
+}
+
+
 .navbar-purple { background-color: #e6ccff; }
 .navbar-purple-drop { background-color: #b093cc; }
 .search-purple { color: #8a2be2; border-color: #8a2be2; }
@@ -19,13 +27,6 @@
 .navbar-purple-drop { background-color: #b093cc; }
 .search-purple { color: #8a2be2; border-color: #8a2be2; }
 .search-purple:hover { background-color: #8a2be2; color: white; }
-
-body { 
-    background: #0f0a1d;
-    color: #ffffff; 
-    font-family: 'Segoe UI', Roboto, sans-serif;
-    min-height: 100vh;
-}
 
 .glass-card {
     background: rgba(30, 20, 55, 0.6);
@@ -126,13 +127,6 @@ body {
 
 
 /*home page*/
-body { 
-    background: #0f0a1d;
-    color: #ffffff; 
-    font-family: 'Segoe UI', Roboto, sans-serif;
-    min-height: 100vh;
-}
-
 .glow-title {
   margin-top: 50px;
   font-size: 50px;
@@ -248,13 +242,6 @@ header p {
 
 
 /*heroes page*/
-body { 
-    background: #0f0a1d;
-    color: #ffffff; 
-    font-family: 'Segoe UI', Roboto, sans-serif;
-    min-height: 100vh;
-}
-
 .section-title {
   color: #8a2be2;
   font-size: 36px;
@@ -290,13 +277,6 @@ body {
 
 
 /*heroes-pages*/
-body { 
-    background: #0f0a1d;
-    color: #ffffff; 
-    font-family: 'Segoe UI', Roboto, sans-serif;
-    min-height: 100vh;
-}
-
 .champion-container { margin-top: 50px; }
 
 .champion-left img {
@@ -460,7 +440,6 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
-/* Custom Input Polja */
 .custom-input-group {
     position: relative;
     display: flex;
@@ -490,7 +469,6 @@ body {
     box-shadow: 0 0 15px rgba(188, 19, 254, 0.2);
 }
 
-/* Neon Dugme */
 .neon-submit-btn {
     background: #bc13fe;
     border: none;
