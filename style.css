@@ -241,75 +241,57 @@ header p {
 
 
 /*heroes page*/
-.section-title {
-  color: #8a2be2;
-  font-size: 36px;
-  margin: 30px 0 20px 0;
-  text-shadow: 0 0 10px #9b4eff;
-  text-align: center;
-}
-
-.champion-card {
-  background-color: #1a1a40;
+/* Tier row */
+.tier-row {
+  background: rgba(0,0,0,0.2);
   border-radius: 15px;
   padding: 10px;
-  text-align: center;
-  box-shadow: 0 0 15px #8a2be2;
-  margin-bottom: 20px;
-  transition: 0.3s;
-  cursor: pointer;
-}
-.champion-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 30px #ff00ff;
+  overflow-x: auto;
 }
 
-.champion-card img {
-  width: 100%;
-  max-width: 200px;
+/* Tier labels */
+.tier-label {
+  min-width: 60px;
+  height: 60px;
+  font-size: 28px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 10px;
-  margin-bottom: 10px;
+  margin-right: 15px;
+  color: white;
 }
 
-.champion-name { font-size: 24px; margin-bottom: 5px; color: #ffccff; }
-.champion-role { font-size: 16px; color: #aaa; }
+.s-tier { background: #ff4d4d; }
+.a-tier { background: #ff944d; }
+.b-tier { background: #ffd11a; color: black; }
 
-
-/*heroes-pages*/
-.champion-container { margin-top: 50px; }
-
-.champion-left img {
-  width: 100%;
-  max-width: 350px;
-  border-radius: 15px;
-  box-shadow: 0 0 25px #8a2be2;
-  transition: 0.3s;
-}
-.champion-left img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 40px #ff00ff;
-}
-
-.champion-name {
-  font-size: 40px;
-  color: #8a2be2;
-  text-shadow: 0 0 10px #9b4eff;
-}
-
-.card-custom {
-  background-color: #1a1a40;
-  padding: 15px;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  box-shadow: 0 0 10px #8a2be2;
-}
-
-.stat-box {
-  background: #26265c;
-  padding: 10px;
-  border-radius: 8px;
+/* Champion icons */
+.champion-icon {
   text-align: center;
   margin: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  width: 70px;
+}
+
+.champion-icon img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(138,43,226,0.4);
+}
+
+.champion-icon span {
+  display: block;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Hover effect */
+.champion-icon:hover {
+  transform: scale(1.1);
 }
 
 /*settings*/
