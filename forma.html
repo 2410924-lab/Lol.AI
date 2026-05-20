@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>LOL.Ai Upitnik</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body{
+    background: linear-gradient(to bottom, #f3e8ff, #e4d4ff);
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+
+.navbar-purple{
+    background-color: #e6ccff;
+}
+
+.navbar-purple-drop{
+    background-color: #d7b8ff;
+}
+
+.search-purple{
+    color: #8a2be2;
+    border-color: #8a2be2;
+}
+
+.search-purple:hover{
+    background-color: #8a2be2;
+    color: white;
+}
+
+/* NASLOV */
+
+.glow-title{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #8a2be2;
+
+    text-shadow:
+    0 0 5px #c084fc,
+    0 0 10px #c084fc;
+}
+
+/* FORMA */
+
+.form-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding-bottom: 50px;
+}
+
+.questionnaire{
+    width: 100%;
+    max-width: 700px;
+
+    background-color: rgba(255,255,255,0.7);
+
+    border: 2px solid #c084fc;
+
+    border-radius: 25px;
+
+    padding: 40px;
+
+    box-shadow: 0 0 25px rgba(138,43,226,0.2);
+}
+
+.questionnaire h2{
+    color: #8a2be2;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-control,
+.form-select{
+    border: 1px solid #c084fc;
+}
+
+.form-control:focus,
+.form-select:focus{
+    border-color: #8a2be2;
+    box-shadow: 0 0 10px rgba(138,43,226,0.3);
+}
+
+.btn-purple{
+    background-color: #b57cff;
+    border: none;
+    color: white;
+    padding: 12px;
+    border-radius: 12px;
+    width: 100%;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.btn-purple:hover{
+    background-color: #8a2be2;
+}
+
+.form-range::-webkit-slider-thumb{
+    background: #8a2be2;
+}
+
+.section-title{
+    color: #8a2be2;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-purple">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="#">LOL.Ai</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="stats.html">Stats</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="heroes.html">Heroes</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            More options
+          </a>
+
+          <ul class="dropdown-menu navbar-purple-drop">
+            <li>
+                <a class="dropdown-item" href="carousel.html">Featured Skins</a>
+            </li>
+
+            <li>
+              <a class="dropdown-item" href="login.html">Login</a>
+            </li>
+
+            <li>
+              <a class="dropdown-item" href="settings.html">Settings</a>
+            </li>
+
+          </ul>
+        </li>
+
+      </ul>
+
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search champion">
+        <button class="btn search-purple" type="submit">Search</button>
+      </form>
+
+    </div>
+  </div>
+</nav>
+
+<!-- NASLOV -->
+
+<h1 class="glow-title">LOL.Ai Questionnaire</h1>
+
+<!-- FORMA -->
+
+<div class="form-wrapper">
+
+<div class="questionnaire">
+
+<h2>League of Legends Player Form</h2>
+
+<form>
+
+<div class="mb-3">
+<label class="form-label">Summoner Name</label>
+<input type="text" class="form-control" placeholder="Enter your name">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Age</label>
+<input type="number" class="form-control" placeholder="Enter your age">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Date Started Playing LoL</label>
+<input type="date" class="form-control">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Tell us about your playstyle</label>
+<textarea class="form-control" rows="4" placeholder="Aggressive, passive, roaming..."></textarea>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Favorite Lane</label>
+
+<select class="form-select">
+<option>Top</option>
+<option>Jungle</option>
+<option>Mid</option>
+<option>ADC</option>
+<option>Support</option>
+</select>
+
+</div>
+
+<div class="section-title">
+Favorite Champion Classes
+</div>
+
+<div class="form-check">
+<input class="form-check-input" type="checkbox">
+<label class="form-check-label">Assassins</label>
+</div>
+
+<div class="form-check">
+<input class="form-check-input" type="checkbox">
+<label class="form-check-label">Mages</label>
+</div>
+
+<div class="form-check">
+<input class="form-check-input" type="checkbox">
+<label class="form-check-label">Tanks</label>
+</div>
+
+<div class="form-check">
+<input class="form-check-input" type="checkbox">
+<label class="form-check-label">Marksmen</label>
+</div>
+
+<div class="form-check">
+<input class="form-check-input" type="checkbox">
+<label class="form-check-label">Supports</label>
+</div>
+
+<div class="section-title">
+Ranked Preference
+</div>
+
+<div class="form-check">
+<input class="form-check-input" type="radio" name="ranked">
+<label class="form-check-label">Solo Queue</label>
+</div>
+
+<div class="form-check">
+<input class="form-check-input" type="radio" name="ranked">
+<label class="form-check-label">Flex Queue</label>
+</div>
+
+<div class="form-check">
+<input class="form-check-input" type="radio" name="ranked">
+<label class="form-check-label">Normal Games</label>
+</div>
+
+<div class="mt-4 mb-4">
+<label class="form-label">How addicted are you to League?</label>
+<input type="range" class="form-range">
+</div>
+
+<button type="submit" class="btn-purple">
+Submit Questionnaire
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
